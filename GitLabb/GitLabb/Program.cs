@@ -1,4 +1,4 @@
-﻿var minbil = new Bil(4, "Toyota", "Privat", 5, "YAG494","svart");
+﻿var minbil = new Bil(4, "Toyota", "Privat", 5, "YAG494","svart",5);
 var minbåt = new Båt("Segel", "Privat", "Ja", "Nej", 3);
 //minbil.typ = "Toyota";
 //minbil.antalfönster = 5;
@@ -37,7 +37,8 @@ class Bil : Fordon
     public int antalfönster;
     public string registreringsnummer;
     public string färg;
-    public Bil(int antalhjul, string typ, string användningsområde, int antalfönster, string registreringsnummer, string färg)
+    public int ålder;
+    public Bil(int antalhjul, string typ, string användningsområde, int antalfönster, string registreringsnummer, string färg, int ålder)
     {
         this.antalhjul = antalhjul;
         this.antalfönster = antalfönster;
@@ -45,6 +46,7 @@ class Bil : Fordon
         this.registreringsnummer = registreringsnummer;
         this.användningsområde = användningsområde;
         this.färg = färg;
+        this.ålder = ålder;
     }
 
 }
